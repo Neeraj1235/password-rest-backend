@@ -5,7 +5,7 @@ require("./db/config");
 const router = require("./routes/router");
 const cors = require("cors");
 const cookiParser = require("cookie-parser");
-const port = 8000;
+const port = process.env.port || 8000;
 
 // app.get("/",(req,res)=>{
 //     res.status(201).json("server start")
